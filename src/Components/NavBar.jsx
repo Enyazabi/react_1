@@ -7,6 +7,7 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
+import Link from "react-router-dom/es/Link";
 
 const styles = {
     root: {
@@ -33,7 +34,10 @@ function ButtonAppBar(props) {
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         News
                     </Typography>
-                    <Button color="inherit">Login</Button>
+                    <Button color="inherit"
+                            component={Link}
+                            to={"login"}
+                    >Login</Button>
                 </Toolbar>
             </AppBar>
         </div>
