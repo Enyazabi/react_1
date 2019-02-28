@@ -27,15 +27,17 @@ function ButtonAppBar(props) {
     const { classes } = props;
     return (
         <div className={classes.root}>
-            <SimpleMenu/>
+
             <AppBar position="static">
+
                 <Toolbar>
-                    <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+                    <SimpleMenu className={classes.menuButton} color="inherit" aria-label="Menu">
                         <MenuIcon />
-                    </IconButton>
+                    </SimpleMenu>
                     <Typography variant="h6" color="inherit" className={classes.grow}>
                         News
                     </Typography>
+
                     <Button color="inherit"
                             component={Link}
                             to={"login"}
