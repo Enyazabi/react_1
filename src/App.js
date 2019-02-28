@@ -3,7 +3,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {createBrowserHistory} from 'history'
 import SignIn from "./Components/LoginComponent";
 import ButtonAppBar from "./Components/NavBar";
-
+import SimpleCard from "./Components/NewsComponent";
 
 
 
@@ -12,6 +12,7 @@ const App =() =>(
       <div>
             <ButtonAppBar/>
 
+            <Route path="/news" component={SimpleCard}/>
             <Route path="/login" component={SignIn}/>
       </div>
 
