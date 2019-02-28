@@ -11,8 +11,10 @@ const App =() =>(
         <Router history={createBrowserHistory}>
       <div>
             <ButtonAppBar/>
+            <SimpleMenu/>
             <Route path="/login" component={SignIn}/>
       </div>
+
 
         </Router>
 )
