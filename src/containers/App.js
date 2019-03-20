@@ -1,11 +1,12 @@
 import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom'
 import {createBrowserHistory} from 'history'
-import SignIn from "./Components/LoginComponent";
-import ButtonAppBar from "./Components/NavBar";
-import SimpleCard from "./Components/NewsComponent";
-import SimpleList from "./Components/ProfilePage";
+import SignIn from "../Components/LoginComponent";
+import ButtonAppBar from "../Components/NavBar";
+import SimpleCard from "../Components/NewsComponent";
+import SimpleList from "../Components/ProfilePage";
 import { connect } from "react-redux";
+import userAction from "../Actions/userAction";
 
 const App =() =>(
         <Router history={createBrowserHistory}>
@@ -25,4 +26,13 @@ function mapStateToProps(state) {
             user: state.userInfo.user
       }
 }
-export default connect(mapStateToProps) (App)
+
+function mapDispatchToProps(dispatch) {
+      return {
+            setUserAction: action => {
+                  dispatch(userAction(action))
+            }
+      }
+}
+
+export default connect(mapStateToProps,  mapDispatchToProps) (App)
