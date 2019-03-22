@@ -25,39 +25,38 @@ const styles = {
     },
 };
 
-function SimpleCard(props) {
-    const { classes } = props;
-    const bull = <span className={classes.bullet}>•</span>;
+class SimpleCard extends React.Component {
+    render() {
+        const {classes} = props;
+        const bull = <span className={classes.bullet}>•</span>;
 
-    return (
-        <Card className={classes.card}>
-            <CardContent>
-                <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    {this.props.news.newsCardTitle}
-                </Typography>
-                <Typography variant="h5" component="h2">
-                    {this.props.news.newsDescription}
-                </Typography>
-                <Typography className={classes.pos} color="textSecondary">
-                    adjective
-                </Typography>
-                <Typography component="p">
-                    well meaning and kindly.
-                    <br />
-                    {'"a benevolent smile"'}
-                </Typography>
-            </CardContent>
-            <CardActions>
-                <Button size="small">Learn More</Button>
-            </CardActions>
-        </Card>
+        return (
+            <Card className={classes.card}>
+                <CardContent>
+                    <Typography className={classes.title} color="textSecondary" gutterBottom>
+                        {this.props.news.newsCardTitle}
+                    </Typography>
+                    <Typography variant="h5" component="h2">
+                        {this.props.news.newsDescription}
+                    </Typography>
+                    <Typography className={classes.pos} color="textSecondary">
+                        adjective
+                    </Typography>
+                    <Typography component="p">
+                        well meaning and kindly.
+                        <br/>
+                        {'"a benevolent smile"'}
+                    </Typography>
+                </CardContent>
+                <CardActions>
+                    <Button size="small">Learn More</Button>
+                </CardActions>
+            </Card>
 
 
-    );
+        );
+    }
+
 }
-
-SimpleCard.propTypes = {
-    classes: PropTypes.object.isRequired,
-};
 
 export default withStyles(styles)(SimpleCard);
