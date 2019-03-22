@@ -27,19 +27,19 @@ const styles = {
 
 class SimpleCard extends React.Component {
     render() {
-        const {classes} = props;
-        const bull = <span className={classes.bullet}>•</span>;
+
+
 
         return (
-            <Card className={classes.card}>
+            <Card >
                 <CardContent>
-                    <Typography className={classes.title} color="textSecondary" gutterBottom>
+                    <Typography  color="textSecondary" gutterBottom>
                         {this.props.news.newsCardTitle}
                     </Typography>
                     <Typography variant="h5" component="h2">
                         {this.props.news.newsDescription}
                     </Typography>
-                    <Typography className={classes.pos} color="textSecondary">
+                    <Typography  color="textSecondary">
                         adjective
                     </Typography>
                     <Typography component="p">
