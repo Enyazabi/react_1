@@ -30,11 +30,11 @@ class NewsContainer extends React.Component {
             <Grid container className={classes.root} spacing={16}>
                 <Grid item xs={12}>
                     <Grid container className={classes.demo} justify="center" spacing={Number(spacing)}>
-                        {[  {newsCardTitle:'fdffdddd'}, {newsDescription:'iofgrsdsysyys'},
-                            {newsCardTitle:'fgsdksdjksdjksdf'}, {newsDescription:'iofgrsfvcfxddxfsfzsdzsfdfzszsfdfdsysyys'},
-                            {newsCardTitle:'fdffdddghhhjjjjjjjjjjjjjjjjjjj'}, {newsDescription:'iofgrsdsysyysfdddddddddddd'},
-                            {newsCardTitle:'ldkfjrrhnffkdldl'}, {newsDescription:'fdlkjgertyfchjss'},
-                            {newsCardTitle:'jfkdlroituyuyuyuy'}, {newsDescription:'aaaaaaaaaaaaaaaaaaaaaaaaa'},
+                        {[  {newsCardTitle:'fdffdddd', newsDescription:'iofgrsdsysyys'},
+                            {newsCardTitle:'fgsdksdjksdjksdf', newsDescription:'iofgrsfvcfxddxfsfzsdzsfdfzszsfdfdsysyys'},
+                            {newsCardTitle:'fdffdddghhhjjjjjjjjjjjjjjjjjjj', newsDescription:'iofgrsdsysyysfdddddddddddd'},
+                            {newsCardTitle:'ldkfjrrhnffkdldl', newsDescription:'fdlkjgertyfchjss'},
+                            {newsCardTitle:'jfkdlroituyuyuyuy', newsDescription:'aaaaaaaaaaaaaaaaaaaaaaaaa'},
                             {newsCardTitle:'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa'}, {newsDescription:'pizdeeeeeec'}
                             ].map(value => (
                             <Grid key={value} item xs={4}>
