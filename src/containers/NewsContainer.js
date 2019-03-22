@@ -35,7 +35,7 @@ class NewsContainer extends React.Component {
                             {newsCardTitle:'fdffdddghhhjjjjjjjjjjjjjjjjjjj', newsDescription:'iofgrsdsysyysfdddddddddddd'},
                             {newsCardTitle:'ldkfjrrhnffkdldl', newsDescription:'fdlkjgertyfchjss'},
                             {newsCardTitle:'jfkdlroituyuyuyuy', newsDescription:'aaaaaaaaaaaaaaaaaaaaaaaaa'},
-                            {newsCardTitle:'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa'}, {newsDescription:'pizdeeeeeec'}
+                            {newsCardTitle:'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa', newsDescription:'pizdeeeeeec'}
                             ].map(value => (
                             <Grid key={value} item xs={4}>
                                 <NewsComponent
