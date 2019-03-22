@@ -40,7 +40,6 @@ class NewsContainer extends React.Component {
                             <Grid key={value} item xs={4}>
                                 <NewsComponent
                                     news={value}
-
                                 />
 
                             </Grid>

@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActions from '@material-ui/core/CardActions';
@@ -18,6 +17,7 @@ const styles = {
         transform: 'scale(0.8)',
     },
     title: {
+        color: '#F08080',
         fontSize: 14,
     },
     pos: {
@@ -26,20 +26,22 @@ const styles = {
 };
 
 class SimpleCard extends React.Component {
+
     render() {
+        const { classes } = this.props;
 
 
 
         return (
-            <Card >
+            <Card className={classes.card}>
                 <CardContent>
-                    <Typography  color="textSecondary" gutterBottom>
+                    <Typography  className={classes.title} color="textSecondary" gutterBottom>
                         {this.props.news.newsCardTitle}
                     </Typography>
                     <Typography variant="h5" component="h2">
                         {this.props.news.newsDescription}
                     </Typography>
-                    <Typography  color="textSecondary">
+                    <Typography className={classes.pos} color="textSecondary">
                         adjective
                     </Typography>
                     <Typography component="p">
