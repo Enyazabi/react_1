@@ -7,6 +7,7 @@ import CardContent from '@material-ui/core/CardContent';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 
+
 const styles = {
     card: {
         minWidth: 275,
@@ -35,7 +36,7 @@ function SimpleCard(props) {
                     Word of the Day
                 </Typography>
                 <Typography variant="h5" component="h2">
-                    be
+
                     {bull}
                     nev
                     {bull}o{bull}
@@ -54,6 +55,8 @@ function SimpleCard(props) {
                 <Button size="small">Learn More</Button>
             </CardActions>
         </Card>
+
+
     );
 }
 
