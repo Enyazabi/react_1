@@ -33,14 +33,10 @@ function SimpleCard(props) {
         <Card className={classes.card}>
             <CardContent>
                 <Typography className={classes.title} color="textSecondary" gutterBottom>
-                    Word of the Day
+                    {this.props.newsCardTitle}
                 </Typography>
                 <Typography variant="h5" component="h2">
-
-                    {bull}
-                    nev
-                    {bull}o{bull}
-                    lent
+                    {this.props.newsDescription}
                 </Typography>
                 <Typography className={classes.pos} color="textSecondary">
                     adjective

@@ -31,16 +31,17 @@ class NewsContainer extends React.Component {
                 <Grid item xs={12}>
                     <Grid container className={classes.demo} justify="center" spacing={Number(spacing)}>
                         {[0, 1, 2, 3, 4, 5].map(value => (
-                            <Grid key={value} item>
-                                <NewsComponent/>
+                            <Grid key={value} item xs={4}>
+                                <NewsComponent
+                                    news={news}
+
+                                />
 
                             </Grid>
                         ))}
                     </Grid>
                 </Grid>
-                <Grid item xs={12}>
 
-                </Grid>
             </Grid>
         );
     }
