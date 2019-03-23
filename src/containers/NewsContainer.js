@@ -35,8 +35,8 @@ class NewsContainer extends React.Component {
 
 
     render() {
-        const { classes } = this.props;
-        const { spacing } = this.state;
+        const {classes} = this.props;
+        const {spacing} = this.state;
 
         return (
             <Grid container className={classes.root} spacing={16}>
@@ -55,10 +55,10 @@ class NewsContainer extends React.Component {
 
             </Grid>
         );
+    }
 }
-
 NewsContainer.propTypes = {
     classes: PropTypes.object.isRequired,
-}};
+};
 
 export default withStyles(styles)(NewsContainer);
