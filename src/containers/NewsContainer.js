@@ -19,15 +19,17 @@ const styles = theme => ({
 class NewsContainer extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {news: [  {newsCardTitle:'fdffdddd', newsDescription:'iofgrsdsysyys'},
-                {newsCardTitle:'fgsdksdjksdjksdf', newsDescription:'iofgrsfvcfxddxfsfzsdzsfdfzszsfdfdsysyys'},
-                {newsCardTitle:'fdffdddghhhjjjjjjjjjjjjjjjjjjj', newsDescription:'iofgrsdsysyysfdddddddddddd'},
-                {newsCardTitle:'ldkfjrrhnffkdldl', newsDescription:'fdlkjgertyfchjss'},
-                {newsCardTitle:'jfkdlroituyuyuyuy', newsDescription:'aaaaaaaaaaaaaaaaaaaaaaaaa'},
-                {newsCardTitle:'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa', newsDescription:'pizdeeeeeec'}
-            ]}
+        this.state = {
+            news: [{newsCardTitle: 'fdffdddd', newsDescription: 'iofgrsdsysyys'},
+                {newsCardTitle: 'fgsdksdjksdjksdf', newsDescription: 'iofgrsfvcfxddxfsfzsdzsfdfzszsfdfdsysyys'},
+                {newsCardTitle: 'fdffdddghhhjjjjjjjjjjjjjjjjjjj', newsDescription: 'iofgrsdsysyysfdddddddddddd'},
+                {newsCardTitle: 'ldkfjrrhnffkdldl', newsDescription: 'fdlkjgertyfchjss'},
+                {newsCardTitle: 'jfkdlroituyuyuyuy', newsDescription: 'aaaaaaaaaaaaaaaaaaaaaaaaa'},
+                {newsCardTitle: 'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa', newsDescription: 'pizdeeeeeec'}
+            ],
+            spacing: '16',
+        }
 
-        spacing: '16',
 
     };
 
@@ -57,6 +59,6 @@ class NewsContainer extends React.Component {
 
 NewsContainer.propTypes = {
     classes: PropTypes.object.isRequired,
-};
+}};
 
 export default withStyles(styles)(NewsContainer);
