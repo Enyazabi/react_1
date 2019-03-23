@@ -20,13 +20,13 @@ class NewsContainer extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            news: [{newsCardTitle: 'fdffdddd', newsDescription: 'iofgrsdsysyys'},
-                {newsCardTitle: 'fgsdksdjksdjksdf', newsDescription: 'iofgrsfvcfxddxfsfzsdzsfdfzszsfdfdsysyys'},
-                {newsCardTitle: 'fdffdddghhhjjjjjjjjjjjjjjjjjjj', newsDescription: 'iofgrsdsysyysfdddddddddddd'},
-                {newsCardTitle: 'ldkfjrrhnffkdldl', newsDescription: 'fdlkjgertyfchjss'},
-                {newsCardTitle: 'jfkdlroituyuyuyuy', newsDescription: 'aaaaaaaaaaaaaaaaaaaaaaaaa'},
-                {newsCardTitle: 'ssssssssssssssssssssssssssssukaaaaaaaaaaaaa', newsDescription: 'pizdeeeeeec'}
-            ],
+            news: [{newsCardTitle: 'title', newsDescription: 'description'},
+                    {newsCardTitle: 'title1', newsDescription: 'description1'},
+                    {newsCardTitle: 'title2', newsDescription: 'description2'},
+                    {newsCardTitle: 'title3', newsDescription: 'description3'},
+                    {newsCardTitle: 'title4', newsDescription: 'description4'},
+                    {newsCardTitle: 'ssukaaaaaaa', newsDescription: 'pizdeeec'}
+                ],
             spacing: '16',
         }
 
@@ -47,7 +47,6 @@ class NewsContainer extends React.Component {
                                 <NewsComponent
                                     news={value}
                                 />
-
                             </Grid>
                         ))}
                     </Grid>
