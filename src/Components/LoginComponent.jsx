@@ -87,7 +87,7 @@ render() {
                     control={<Checkbox value="remember" color="primary" />}
                     label="Remember me"
                   />
-                  <Button onClick={()=>{login ('username', 'password')}}
+                  <Button onClick={()=>{login ('pidr', 'subaru')}}
                     fullWidth
                     variant="contained"
                     color="primary"
