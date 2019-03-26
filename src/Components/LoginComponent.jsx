@@ -59,7 +59,7 @@ render() {
         if (username === this.state.username &&
           password === this.state.password) {
 
-          console.log('loh pidor net huya')}
+          console.log('loh pidor net druzei')}
         return null
     }
 
@@ -87,8 +87,7 @@ render() {
                     control={<Checkbox value="remember" color="primary" />}
                     label="Remember me"
                   />
-                  <Button onClick={login('pidr7', 'subaru')}
-                    type="submit"
+                  <Button onClick={()=>{login ('username', 'password')}}
                     fullWidth
                     variant="contained"
                     color="primary"
